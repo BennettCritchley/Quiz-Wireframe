@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "Beleren Bold";
+  src:
+    url("/magicFonts/Beleren2016-Bold.ttf");
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+body {
+  font-family: 'Beleren2016-Bold';
+
+}
+section{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Beleren Bold";
+}
+
+h1{
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h2 {
+  display: inline-block;
+}
+h3 {
+  padding: 40px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 20px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border: 3px solid #33007b;
+  border-radius: 3px;
+  font-family: "Beleren Bold";
+  font-size: 1.125em;
+}
+
+
+/* Groups */
+.group {
+  display: flex;
+}
+
+/* .centerQuestions { */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+/* } */
+
+.item {
+  flex: 1;
+  flex-direction: row;
+  /* justify-content: center; */
+  padding-top: 20px;
+}
+
+.item-float-left {
+  flex: 1;
+  float: left;
+  padding-left: 40px;
+  padding-right: 10px;
+  width: 100%
+}
+
+.item-float-right {
+  flex: 1;
+  float: right;
+  padding-right: 10px;
+}
+
+.item-double {
+  display: flex;
+  flex: 1;
+}
+
+.mainChanges {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.mainPageImg {
+  flex: 1;
+}
+
+.startingPoint {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.correctOrFalse {
+  background-color: green;
+}
+
+.questionHeader {
+  background-color: #363636;
+}
+
+.questionHere {
+  display: inline-block;
+  padding: 5px;
+
+}
+
+#answersHere {
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Mobile Changes */
+@media all and (min-width: 800px) {
+
+ .mainChanges {
+
+ }
+}
+
+@media all and (max-width: 600px) {
+  #answersHere {
+    flex-direction: auto;
+  }
+}
+
+/* buttons */
+
+.startingPoint:hover {
+  opacity: 0.6;
+}
+
+.li:hover {
+  opacity: 0.6;
+}
